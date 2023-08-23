@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="../author.txt" />
+    <meta name="description" content="Proyecto Integrador - Etapa 1 | Bootcamp Full Stack Engineer para Educacion IT" />
+    <meta name="copyright" content="Ref. to author | 2023 todos los derechos reservados" />
+    <meta name="keywords" content="HTML5, CSS3, Imágenes, Git, GitHub, SCSS, Sass, NodeJs, Grid, JavaSCript" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="icon" href="./images/products/osita/mockup-graphics-PNsj6RiHAF4-unsplash.jpg" />
+
+    <title>about</title>
+</head>
+
+<body>
+    <header class="header">
+        <picture class="header__logo">
+            <a href="index.html"><img id="logo" width="50px"
+                    src="./images/products/osita/mockup-graphics-PNsj6RiHAF4-unsplash.jpg" alt="imagen" /></a>
+            <h2 class="brandTitle">Juguetería Cósmica</h2>
+        </picture>
+        <menu class="search">
+            <form action="" id="searchForm">
+                <input type="text" id="nameProd" placeholder="Buscar producto" />
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </menu>
+        <menu class="cart">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </menu>
+        <menu class="menu">
+            <a href="#" onclick="openMenu()"><i class="fas fa-bars"></i></a>
+        </menu>
+        <nav id="links" class="links header__links">
+            <a href="index.html">Home</a>
+            <a href="add.html">Alta</a>
+            <a href="contact.html">Contacto</a>
+            <a class="active" href="about.html">Nosotros</a>
+        </nav>
+    </header>
+    <main class="main__about">
+        <h1>Nosotros</h1>
+        <section class="section__about">
+            <article class="article__about">
+                <h2>Quiénes somos?</h2>
+                <p>Somos una Juguetería Online que busca acercar a los niños y niñas a los juguetes que más les gustan.
+                </p>
+                <p>Encontrarás una gran variedad de juguetes para todas las edades, desde los más pequeños hasta los más
+                    grandes.</p>
+                <p>Contamos con juguetes de las mejores marcas, y con una excelente calidad.</p>
+            </article>
+            <article class="article__about">
+                <h2>Por qué elegirnos?</h2>
+
+                <p>Porque somos una empresa que se preocupa por la calidad de los productos que ofrecemos, y por la
+                    satisfacción de nuestros clientes.</p>
+                <p>Porque nos esforzamos por brindar un servicio de excelencia, y por eso nos mantenemos en constante
+                    comunicación con nuestros clientes.</p>
+                <p>Porque nos preocupamos por el medio ambiente, y por eso utilizamos materiales reciclables para el
+                    embalaje de nuestros productos.</p>
+            </article>
+            <article class="article__about">
+                <h2>Dónde estamos?</h2>
+
+                <p>Estamos en la ciudad de Buenos Aires, Argentina.</p>
+                <p>Contamos con un local físico en el barrio de Palermo, y con un depósito en el barrio de Villa Crespo.
+                </p>
+                <p>Además, realizamos envíos a todo el país.</p>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11049.493992494281!2d-58.43302822803537!3d-34.57800071713376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aabcb7b7fd341%3A0xd4d803156d38286c!2sDistrito%20Arcos%20Premium%20Outlet!5e0!3m2!1ses!2sar!4v1692542656680!5m2!1ses!2sar"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <picture class="footer__logo">
+            <a href="index.html"><img id="logo" width="50px"
+                    src="./images/products/osita/mockup-graphics-PNsj6RiHAF4-unsplash.jpg" alt="imagen" /></a>
+        </picture>
+        <menu>
+            <nav class="footer__links">
+                <a href="contact.html">Contactanos!</a>
+            </nav>
+        </menu>
+        <menu>
+            <nav class="footer__social">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+            </nav>
+        </menu>
+    </footer>
+    <script src="../src/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/97c43de77d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

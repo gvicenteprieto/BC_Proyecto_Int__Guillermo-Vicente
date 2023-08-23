@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="../author.txt" />
+    <meta
+      name="description"
+      content="Proyecto Integrador - Etapa 1 | Bootcamp Full Stack Engineer para Educacion IT"
+    />
+    <meta
+      name="copyright"
+      content="Ref. to author | 2023 todos los derechos reservados"
+    />
+    <meta
+      name="keywords"
+      content="HTML5, CSS3, Imágenes, Git, GitHub, SCSS, Sass, NodeJs, Grid, JavaSCript"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link
+      rel="icon"
+      href="./images/products/osita/mockup-graphics-PNsj6RiHAF4-unsplash.jpg"
+    />
+
+    <title>Home</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <picture class="header__logo">
+        <a href="index.html"
+          ><img
+            id="logo"
+            width="50px"
+            src="./images/products/osita/mockup-graphics-PNsj6RiHAF4-unsplash.jpg"
+            alt="imagen"
+        /></a>
+        <h2 class="brandTitle">Juguetería Cósmica</h2>
+      </picture>
+      <menu class="search">
+        <form action="" id="searchForm">
+          <input type="text" id="nameProd" placeholder="Buscar producto" />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </menu>
+      <menu class="cart">
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+      </menu>
+      <menu class="menu">
+        <a href="#" onclick="openMenu()"><i class="fas fa-bars"></i></a>
+      </menu>
+      <nav id="links" class="links header__links">
+        <a class="active" href="index.html">Home</a>
+        <a href="add.html">Alta</a>
+        <a href="contact.html">Contacto</a>
+        <a href="about.html">Nosotros</a>
+      </nav>
+    </header>
+
+    <main class="main__index">
+      <h1>Home</h1>
+      <section class="section__products"></section>
+
+       <section class="cart">
+            <article class="cart__list"></article>
+        </section> 
+
+        <aside id="allProducts">
+
+        </aside>
+
+    </main>
+
+    <footer class="footer">
+      <picture class="footer__logo">
+        <a href="index.html"
+          ><img
+            id="logo"
+            width="50px"
+            src="./images/products/osita/mockup-graphics-PNsj6RiHAF4-unsplash.jpg"
+            alt="imagen"
+        /></a>
+      </picture>
+      <menu>
+        <nav class="footer__links">
+          <a href="contact.html">Contactanos!</a>
+        </nav>
+      </menu>
+      <menu>
+        <nav class="footer__social">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-instagram-square"></i>
+          </a>
+          <a
+            href="https://www.twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </nav>
+      </menu>
+    </footer>
+
+    <script src="../src/js/script.js"></script>
+    <script src="../src/js/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/97c43de77d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

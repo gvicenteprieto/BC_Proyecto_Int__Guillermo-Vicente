@@ -1,0 +1,72 @@
+@use "./_h-fonts" as F;
+@use "./_h-colors" as C;
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: C.$c-brand;
+  padding: 30px;
+  width: 100%;
+
+  .footer__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 120px;
+      height: 100px;
+      border-radius: 10%;
+      border: 2px solid C.$c-brand-border;
+    }
+  }
+
+  .footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+
+    a {
+      color: C.$c-brand-link;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+    a:hover {
+      background-color: C.$c-brand-hover;
+      color: C.$c-brand-hover-color;
+    }
+  }
+
+  .footer__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    margin: 10px;
+
+    a {
+      color: C.$c-brand-link;
+      text-decoration: none;
+      font-size: 150%;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+    a:hover {
+      background-color: C.$c-brand-hover;
+      color: C.$c-brand-hover-color;
+    }
+  }
+}
