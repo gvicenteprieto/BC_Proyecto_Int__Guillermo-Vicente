@@ -20,7 +20,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?
+      family=Bai+Jamjuree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700
+      &family=Montserrat:wght@500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -60,7 +62,7 @@
       </menu>
       <nav id="links" class="links header__links">
         <a class="active" href="index.html">Home</a>
-        <a href="add.html">Alta</a>
+        <a href="update.html">Alta</a>
         <a href="contact.html">Contacto</a>
         <a href="about.html">Nosotros</a>
       </nav>
@@ -68,18 +70,87 @@
 
     <main class="main__index">
       <h1>Home</h1>
+
       <section class="section__products"></section>
 
-       <section class="cart">
-            <article class="cart__list"></article>
-        </section> 
+      <section class="cart">
+        <article class="cart__list"></article>
+      </section>
 
-        <aside id="allProducts">
+      <aside class="slideshow-container">
+        <figure class="slides fade">
+          <img src="./images/slides/slide0_daniel-cheung.jpg" />
+        </figure>
+        <figure class="slides fade">
+          <img src="./images/slides/slide1_will-porada.jpg" />
+        </figure>
+        <div>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </aside>
 
-        </aside>
-
+      <aside class="slideshow-container">
+        <div class="container">
+          <a href="./contact.html">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="bannerSlides fadeBanner">
+                  <i class="fa-solid fa-truck-fast icon"></i>
+                  <div>
+                    <h4>Envío Gratis</h4>
+                    <h5>En órdenes superiores a $30000</h5>
+                  </div>
+                </div>
+                <div class="bannerSlides fadeBanner">
+                  <i class="fa-regular fa-credit-card icon"></i>
+                  <div>
+                    <h4>Hasta 6 Cuotas sin Interés</h4>
+                    <h5>Con todas las tarjetas de crédito</h5>
+                  </div>
+                </div>
+                <div class="bannerSlides fadeBanner">
+                  <i class="fa-brands fa-whatsapp icon"></i>
+                  <div>
+                    <h4>Atención Al Cliente</h4>
+                    <h5>Estamos para ayudarte</h5>
+                  </div>
+                </div>
+                <p id="date"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </aside>
+      <aside>
+        <div class="elements-credit-cards">
+          <div class="icons-credit-cards">
+            <img class="img-credit-cards" src="" alt="visa" />
+          </div>
+          <div class="icons-credit-cards">
+            <img class="img-credit-cards" src="" alt="mastercard" />
+          </div>
+          <div class="icons-credit-cards">
+            <img class="img-credit-cards" src="" alt="amex" />
+          </div>
+          <div class="icons-credit-cards">
+            <img class="img-credit-cards" src="" alt="ar_banelco" />
+          </div>
+          <div class="icons-credit-cards">
+            <img class="img-credit-cards" src="" alt="ar_cabal" />
+          </div>
+          <div class="icons-credit-cards">
+            <img class="img-credit-cards" src="" alt="ar_tarjeta-naranja" />
+          </div>
+          <div class="icons-credit-cards">
+            <img class="img-credit-cards" src="" alt="ar_tarjeta-shopping" />
+          </div>
+          <div class="icons-credit-cards">
+            <img class="img-credit-cards" src="" alt="mercadopago" />
+          </div>
+        </div>
+      </aside>
     </main>
-
     <footer class="footer">
       <picture class="footer__logo">
         <a href="index.html"
@@ -95,35 +166,50 @@
           <a href="contact.html">Contactanos!</a>
         </nav>
       </menu>
-      <menu>
-        <nav class="footer__social">
-          <a
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-facebook-square"></i>
+      <menu class="footer__address">
+        <p>
+          <a href="">
+            <i class="fas fa-map-marker-alt"></i> Av. Corrientes 1234, CABA
           </a>
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-instagram-square"></i>
+        </p>
+        <p>
+          <a href=""> <i class="fas fa-phone-alt"></i> 011 1234-5678 </a>
+        </p>
+        <p>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:jugueteria@jugueteria_cosmica.com.ar" target="_blank">
+            jugueteria@cosmica.com.ar
           </a>
-          <a
-            href="https://www.twitter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-twitter-square"></i>
-          </a>
-        </nav>
+        </p>
       </menu>
+      <nav class="footer__social">
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-instagram-square"></i>
+        </a>
+        <a
+          href="https://www.twitter.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-twitter-square"></i>
+        </a>
+      </nav>
     </footer>
 
-    <script src="../src/js/script.js"></script>
+    <script src="../src/js/menu.js"></script>
     <script src="../src/js/index.js"></script>
+    <script src="../src/js/banners.js"></script>
     <script
       src="https://kit.fontawesome.com/97c43de77d.js"
       crossorigin="anonymous"

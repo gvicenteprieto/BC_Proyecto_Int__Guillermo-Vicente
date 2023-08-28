@@ -1,6 +1,5 @@
 node_modules
 package-lock.json
 src/notes.txt
-public/cart.html
-```
-
+public/prueba.html
+src/js/exercise.js
