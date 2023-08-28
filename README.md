@@ -1,6 +1,6 @@
 # Bootcamp Full Stack Engineer > educaciónIT
 
-## Entrega Desafío
+## Challenges and Projects
 
 ## BC_Proyecto_Int__Guillermo-Vicente
 
@@ -24,8 +24,10 @@
   npm install -g sass
 ```
 
-#### Usage/Example Sass
+### Description
 
-```bash
-  npm run sass
-```
+- This project is a web page for a fictional company that sells products for children's toys. It is a responsive web page, with a mobile-first approach. It is built with HTML5, CSS3, Sass and JavaScript.
+
+### Links
+
+- [Repository](https://github.com/gvicenteprieto/BC_Proyecto_Int__Guillermo-Vicente)

@@ -1383,7 +1383,7 @@ main a:hover {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border-top: 3px solid #5c0a67;
+  border-top: 3px solid #ffffff;
   background-color: #f6aaff;
 }
 .footer .footer__logo {
