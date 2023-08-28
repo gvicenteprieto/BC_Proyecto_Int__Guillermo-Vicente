@@ -301,7 +301,7 @@ main {
         padding: 5px;
 
         .cart__list {
-            background-color: C.$c-brand-pink;
+            background-color: yellow;
             border-radius: 5px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
             display: flex;
@@ -377,7 +377,21 @@ main {
     justify-content: center;
     min-height: 600px;
     padding-top: 25px;
+//
+    .success-message {
+        display: flex;
+        flex-direction: column;
+        color: C.$c-success-msg;
+        font-size: 22px;
+        width: 70%;
+        text-align: center;
 
+        p {
+            font-size: 20px;
+            margin: 10px;
+        }
+    }
+//
     .form__update {
         background-color: C.$c-brand-bg;
         margin: 0 20px 5rem 20px;
@@ -418,6 +432,7 @@ main {
             border: 1px solid C.$c-brand-hover-color;
             color: C.$c-brand-border;
             font-weight: bold;
+            cursor: pointer;
         }
     }
 
@@ -449,7 +464,7 @@ main {
     .success-message {
         display: flex;
         flex-direction: column;
-        color: C.$c-success-msg;
+        color: C.$c-brand-border;
         font-size: 15px;
         width: 60%;
         text-align: center;
@@ -540,6 +555,7 @@ main {
             border: 1px solid C.$c-brand-hover-color;
             color: C.$c-brand-border;
             font-weight: bold;
+            cursor: pointer;
         }
     }
 

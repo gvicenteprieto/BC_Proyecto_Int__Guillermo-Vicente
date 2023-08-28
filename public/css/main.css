@@ -323,7 +323,7 @@ template, [hidden] {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  border-bottom: 7.5px dotted #5c0a67;
+  border-bottom: 3px solid #f6aaff;
 }
 .header .header__logo {
   flex: 1 1 100%;
@@ -1058,7 +1058,7 @@ main a:hover {
   padding: 5px;
 }
 .main__index .cart .cart__list {
-  background-color: #f6aaff;
+  background-color: yellow;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -1123,6 +1123,18 @@ main a:hover {
   min-height: 600px;
   padding-top: 25px;
 }
+.main__update .success-message {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 22px;
+  width: 70%;
+  text-align: center;
+}
+.main__update .success-message p {
+  font-size: 20px;
+  margin: 10px;
+}
 .main__update .form__update {
   background-color: #e9e7e9;
   margin: 0 20px 5rem 20px;
@@ -1161,6 +1173,7 @@ main a:hover {
   border: 1px solid #5c0a67;
   color: #5c0a67;
   font-weight: bold;
+  cursor: pointer;
 }
 .main__update .is-invalid {
   border: 2px solid #ff0000;
@@ -1179,7 +1192,7 @@ main a:hover {
   display: flex;
   flex-direction: row;
   margin: 0px 0px 15px 0px;
-  color: #d95183;
+  color: #ff0000;
   font-size: 16px;
   font-weight: bold;
   padding-left: 15px;
@@ -1187,7 +1200,7 @@ main a:hover {
 .main__update .success-message {
   display: flex;
   flex-direction: column;
-  color: #ffffff;
+  color: #5c0a67;
   font-size: 15px;
   width: 60%;
   text-align: center;
@@ -1269,6 +1282,7 @@ main a:hover {
   border: 1px solid #5c0a67;
   color: #5c0a67;
   font-weight: bold;
+  cursor: pointer;
 }
 .main__contact .is-invalid {
   border: 2px solid #ff0000;
@@ -1287,7 +1301,7 @@ main a:hover {
   display: flex;
   flex-direction: row;
   margin: 0px 0px 15px 0px;
-  color: #d95183;
+  color: #ff0000;
   font-size: 16px;
   font-weight: bold;
   padding-left: 15px;
@@ -1369,7 +1383,7 @@ main a:hover {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border-top: 7.5px dotted #5c0a67;
+  border-top: 3px solid #5c0a67;
   background-color: #f6aaff;
 }
 .footer .footer__logo {

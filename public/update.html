@@ -69,47 +69,65 @@
     <main class="main__update">
       <h1>Alta</h1>
       <div id="validationMessage" class="success-message"></div>
+      <div id="successMessage" class="success-message"></div>
       <form id="form__update" class="form__update">
+        <p id="validationMessage"></p>
         <label for="name" class="label__add">Nombre</label>
         <input
           class="input__add"
           type="text"
           name="name_prod"
           id="name_prod"
-          placeholder="Nombre"
+          placeholder="ex: X Men, Osita, etc."
         />
+        <div>
+          <p id="errorName_prod" class="error-message"></p>
+        </div>
+
         <label class="label__add" for="price">Precio</label>
         <input
           class="input__add"
-          type="number"
+          type="text"
           name="price"
           id="price"
-          placeholder="Precio"
+          placeholder="ex: 0.99, 25.33 etc."
         />
+        <div>
+          <p id="errorPrice" class="error-message"></p>
+        </div>
         <label class="label__add" for="stock">Stock</label>
         <input
           class="input__add"
           type="number"
           name="stock"
           id="stock"
-          placeholder="Stock"
+          placeholder="ex: 1, 10, etc."
         />
+        <div>
+          <p id="errorStock" class="error-message"></p>
+        </div>
         <label class="label__add" for="brand">Marca</label>
         <input
           class="input__add"
           type="text"
           name="brand"
           id="brand"
-          placeholder="Marca"
+          placeholder="ex: 3M, Cosmic Toys, etc."
         />
+        <div>
+          <p id="errorBrand" class="error-message"></p>
+        </div>
         <label class="label__add" for="category">Categoria</label>
         <input
           class="input__add"
           type="text"
           name="category"
           id="category"
-          placeholder="Categoria"
+          placeholder="ex: Peluches, Juguetes, etc."
         />
+        <div>
+          <p id="errorCategory" class="error-message"></p>
+        </div>
         <label class="label__add" for="short_description"
           >Descripcion Corta</label
         >
@@ -118,8 +136,11 @@
           type="text"
           name="short_description"
           id="short_description"
-          placeholder="Descripcion Corta"
+          placeholder=" Lorem ipsum."
         />
+        <div>
+          <p id="errorShort_description" class="error-message"></p>
+        </div>
         <label class="label__add" for="long_description"
           >Descripcion Larga</label
         >
@@ -128,14 +149,19 @@
           type="text"
           name="long_description"
           id="long_description"
-          placeholder="Descripcion Larga"
+          placeholder="ex: Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         />
+        <div>
+          <p id="errorLong_description" class="error-message"></p>
+        </div>
         <label class="label__add" for="free_shipping">Envio sin Cargo</label>
-
         <select class="input__add" name="free_shipping" id="free_shipping">
           <option value="1">Si</option>
           <option value="0">No</option>
         </select>
+        <!-- <div>
+          <p id="errorFree_shipping" class="error-message"></p>
+        </div> -->
 
         <label class="label__add" for="age_from">Edad Desde</label>
         <input
@@ -145,6 +171,10 @@
           id="age_from"
           placeholder="Edad Desde"
         />
+        <div>
+          <p id="errorAge_from" class="error-message"></p>
+        </div>
+
         <label class="label__add" for="age_to">Edad Hasta</label>
         <input
           class="input__add"
@@ -153,22 +183,28 @@
           id="age_to"
           placeholder="Edad Hasta"
         />
+        <div>
+          <p id="errorAge_to" class="error-message"></p>
+        </div>
         <label class="label__add" for="photo">Foto</label>
         <input
           class="input__add"
-          type="text"
+          type="file"
           name="photo"
           id="photo"
           placeholder="Foto"
         />
+        <div>
+          <p id="errorPhoto" class="error-message"></p>
+        </div>
         <button class="btnSend button__add">Enviar</button>
-        <p id="errors" class="error-message"></p>
+         <!-- <p id="errors" class="error-message"></p>
         <p id="successMessage" class="success-message"></p>
         <p id="validationMessage"></p>
 
-        <p id="errorName" class="error-message"></p>
+        <p id="errorName" class="error-message"></p>  -->
       </form>
-      <section></section>
+      <!-- <section></section> -->
     </main>
     <footer class="footer">
       <picture class="footer__logo">
