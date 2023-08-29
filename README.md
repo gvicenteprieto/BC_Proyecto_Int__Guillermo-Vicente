@@ -30,4 +30,4 @@
 
 ### Links
 
-- [Repository](https://github.com/gvicenteprieto/BC_Proyecto_Int__Guillermo-Vicente)
+- [Project](https://gvicenteprieto.github.io/BC_Proyecto_Int__Guillermo-Vicente//public/index.html)
