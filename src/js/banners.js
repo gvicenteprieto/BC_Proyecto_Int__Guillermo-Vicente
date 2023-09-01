@@ -1,4 +1,4 @@
-//banner imágenes
+//banner img
 let slideIndexI = 0;
 showSlides();
 
@@ -22,7 +22,7 @@ function showSlides() {
   setTimeout(showSlides, 3500);
 }
 
-//banner envío, cuotas, atención
+//banner shipping, fees, attention
 let slideIndexB = 0;
 function showSlidesBanners() {
   let i;
@@ -43,8 +43,8 @@ function showSlidesBanners() {
 }
 showSlidesBanners(slideIndexB);
 
-//tiempo actual
+//current date
 let date = new Date();
-let actualDate =
+let currentDate =
   date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
-document.getElementById("date").innerHTML = actualDate;
+document.getElementById("date").innerHTML = currentDate;

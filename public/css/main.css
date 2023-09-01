@@ -978,7 +978,6 @@ main a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0;
 }
 .main__index .section__products .products {
   display: flex;
@@ -993,18 +992,18 @@ main a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 100%;
-  padding: 5px;
+  max-width: 450px;
+  height: 350px;
+  padding: 15px;
   margin: 15px;
   border-radius: 5px;
   border: 1px solid rgb(185, 187, 187);
   transition: all 0.3s ease-in-out;
 }
 .main__index .section__products .products .product .product__img {
-  width: 150px;
-  height: 150px;
-  margin: 10px;
+  width: 175px;
+  height: 175px;
+  margin: 20px;
   border-radius: 5px;
   border: 2px solid #23b7c2;
   transition: all 0.3s ease-in-out;
@@ -1012,16 +1011,14 @@ main a:hover {
 .main__index .section__products .products .product .product__img:hover {
   transform: scale(1.25);
   border: 2px solid #5c0a67;
-  border-radius: 5px;
+  border-radius: 50%;
 }
 .main__index .section__products .products .product .product__info {
+  width: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: auto;
-  height: auto;
-  padding: 5px;
+  padding: 0;
   margin: 0;
 }
 .main__index .section__products .products .product .product__info .product__name {
@@ -1029,7 +1026,7 @@ main a:hover {
   font-size: 1rem;
 }
 .main__index .section__products .products .product .product__info .product__brand {
-  font-size: 18px;
+  font-size: 16px;
   font-style: italic;
   margin: 0;
   color: #0d7880;
@@ -1331,7 +1328,7 @@ main a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 600px;
+  min-height: 800px;
   padding-top: 25px;
 }
 .main__about .section__about {
@@ -1366,6 +1363,68 @@ main a:hover {
   border: 2px solid #5c0a67;
   border-radius: 10px;
 }
+.main__about .section__about .column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.main__about .section__about .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  opacity: 0.9;
+  z-index: 2;
+}
+.main__about .section__about .about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.main__about .section__about p {
+  font-size: 16px;
+}
+.main__about .section__about .container {
+  padding: 0 16px;
+}
+.main__about .section__about .container::after,
+.main__about .section__about .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main__about .section__about .button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #23b7c2;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.main__about .section__about .button:hover {
+  background-color: #555;
+}
+@media screen and (max-width: 768px) {
+  .main__about .section__about .column {
+    width: 100%;
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__about .section__about .column {
+    width: 50%;
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main__about .section__about .column {
+    width: 33%;
+    display: block;
+  }
+}
 
 /* cart.html */
 .main__cart {
@@ -1375,6 +1434,68 @@ main a:hover {
   justify-content: center;
   min-height: 800px;
   padding-top: 25px;
+}
+
+.main__shops {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 800px;
+  padding-top: 25px;
+}
+.main__shops #container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+.main__shops #container .section__shops {
+  margin: 10px;
+  padding: 0 25px;
+  opacity: 0.75;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #5c0a67;
+  border-radius: 5px;
+  max-width: 300px;
+  min-height: 300px;
+  background-color: #e9e7e9;
+}
+.main__shops #container .section__shops .article__shops {
+  background-color: #f6aaff;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.main__shops #container .section__shops .article__shops h5 {
+  width: 30%;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #5c0a67;
+  text-decoration: unset;
+  text-align: center;
+}
+.main__shops #container .section__shops .article__shops h6 {
+  margin: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: overline;
+}
+.main__shops #container .section__shops .article__shops p {
+  font-size: 16px;
+  color: #000000;
 }
 
 .footer {

@@ -31,7 +31,6 @@ class Product {
 
   getHtmlArticle(string = ["article"]) {
     let article = document.createElement(string);
-    article.id = "article";
     let section = document.querySelector("section");
     section.appendChild(article);
 
@@ -44,7 +43,7 @@ class Product {
                 <div class="product__info">
                     <h3 class="product__name">${this.name_prod}</h3>
                     <p class="product__brand">${this.brand}</p>
-                    <p>${this.short_description}</p>
+                    <p class="product__price">${this.short_description}</p>
                     <p class="product__price">$ ${this.price}</p>
                     <p class="product__category">${this.category}</p>
 
@@ -57,7 +56,7 @@ class Product {
 
 let prd_1 = new Product(
   "Osita",
-  1000,
+  1234.55,
   10,
   "Cosmic Toys",
   "Peluche",
@@ -71,7 +70,7 @@ let prd_1 = new Product(
 
 let prd_2 = new Product(
   "Conejita",
-  1000,
+  1352.28,
   10,
   "Cosmic Toys",
   "Peluche",
@@ -85,7 +84,7 @@ let prd_2 = new Product(
 
 let prd_3 = new Product(
   "Conejito",
-  1000,
+  1153.89,
   10,
   "Cosmic Toys",
   "Peluche",
@@ -99,7 +98,7 @@ let prd_3 = new Product(
 //autobus verde
 let prd_4 = new Product(
   "Autobus verde",
-  1000,
+  1354.99,
   10,
   "Cosmic Toys",
   "Juguete",
@@ -114,7 +113,7 @@ let prd_4 = new Product(
 //autobus azul
 let prd_5 = new Product(
   "Autobus azul",
-  1000,
+  1354.99,
   10,
   "Cosmic Toys",
   "Juguete",
@@ -126,11 +125,74 @@ let prd_5 = new Product(
   "./images/products/autobus_azul/mourizal-zativa-nRlZOmuuJwA-unsplash.jpg"
 );
 
+//autobus rojo
+let prd_6 = new Product(
+  "Camiones",
+  1568.99,
+  10,
+  "Cosmic Toys",
+  "Juguete",
+  "Camiones",
+  "Camiones",
+  "Si",
+  0,
+  99,
+  "./images/products/camiones_1/mourizal-zativa-DnTd-Snz5Ak-unsplash.jpg"
+);
+
+let prd_7 = new Product(
+  "Lego 1",
+  1000,
+  10,
+  "Cosmic Toys",
+  "Juguete",
+  "Lego",
+  "Lego",
+  "Si",
+  0,
+  99,
+  "./images/products/lego_1/mulyadi-wQRCaurCX3k-unsplash.jpg"
+);
+
+let prd_8 = new Product(
+  "Lego 2",
+  1000,
+  10,
+  "Cosmic Toys",
+  "Juguete",
+  "Lego",
+  "Lego",
+  "Si",
+  0,
+  99,
+  "./images/products/lego_2/mulyadi-2_qZc6p0Ykc-unsplash.jpg",
+);
+
+let prd_9 = new Product(
+  "Lego 3",
+  1000,
+  10,
+  "Cosmic Toys",
+  "Juguete",
+  "Lego",
+  "Lego",
+  "Si",
+  0,
+  99,
+  "./images/products/lego_3/mulyadi-j90sW7zZJQQ-unsplash.jpg",
+);
+
+
+
 prd_1.getHtmlArticle();
 prd_2.getHtmlArticle();
 prd_3.getHtmlArticle();
 prd_4.getHtmlArticle();
 prd_5.getHtmlArticle();
+prd_6.getHtmlArticle();
+prd_7.getHtmlArticle();
+prd_8.getHtmlArticle();
+prd_9.getHtmlArticle();
 
 let addCart = document.querySelectorAll(".btnAddCart");
 //console.log(addCart);

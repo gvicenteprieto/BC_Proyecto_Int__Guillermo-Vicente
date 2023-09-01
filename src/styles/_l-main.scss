@@ -1,5 +1,6 @@
 @use "./_h-fonts" as F;
 @use "./_h-colors" as C;
+@use "./_h-breakPoints" as BP;
 
 main {
 
@@ -115,7 +116,7 @@ main {
     .swiper-container {
         width: 95vw;
         height: 100%;
-        background-color: C.$c-brand; 
+        background-color: C.$c-brand;
         padding: 5px;
         display: flex;
         justify-content: center;
@@ -144,7 +145,7 @@ main {
     p {
         margin: 1rem;
         font-size: 1rem;
-        
+
     }
 
     .bannerSlides {
@@ -203,7 +204,6 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 0;
 
         .products {
             display: flex;
@@ -212,24 +212,26 @@ main {
             flex-wrap: wrap;
             width: 100%;
 
+
+
             .product {
                 background-color: C.$c-brand-bg;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                width: 400px;
-                height: 100%;
-                padding: 5px;
+                max-width: 450px;
+                height: 350px;
+                padding: 15px;
                 margin: 15px;
                 border-radius: 5px;
                 border: 1px solid rgb(185, 187, 187);
                 transition: all 0.3s ease-in-out;
 
                 .product__img {
-                    width: 150px;
-                    height: 150px;
-                    margin: 10px;
+                    width: 175px;
+                    height: 175px;
+                    margin: 20px;
                     border-radius: 5px;
                     border: 2px solid C.$c-brand;
                     transition: all 0.3s ease-in-out;
@@ -238,17 +240,15 @@ main {
                 .product__img:hover {
                     transform: scale(1.25);
                     border: 2px solid C.$c-brand-border;
-                    border-radius: 5px;
+                    border-radius: 50%;
                 }
 
                 .product__info {
+                    width: 200px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
                     align-items: center;
-                    width: auto;
-                    height: auto;
-                    padding: 5px;
+                    padding: 0;
                     margin: 0;
 
                     .product__name {
@@ -257,7 +257,7 @@ main {
                     }
 
                     .product__brand {
-                        font-size: 18px;
+                        font-size: 16px;
                         font-style: italic;
                         margin: 0;
                         color: C.$c-brand-dark;
@@ -377,7 +377,8 @@ main {
     justify-content: center;
     min-height: 600px;
     padding-top: 25px;
-//
+
+
     .success-message {
         display: flex;
         flex-direction: column;
@@ -391,7 +392,8 @@ main {
             margin: 10px;
         }
     }
-//
+
+    //
     .form__update {
         background-color: C.$c-brand-bg;
         margin: 0 20px 5rem 20px;
@@ -416,7 +418,7 @@ main {
             padding-left: 15px;
             height: 43px;
             font-size: 18px;
-              background-color: C.$c-brand-hover;
+            background-color: C.$c-brand-hover;
             border-radius: 3px;
             border: 1px solid C.$c-brand-hover-color;
             border: none;
@@ -436,7 +438,7 @@ main {
         }
     }
 
-      .is-invalid {
+    .is-invalid {
         border: 2px solid C.$c-invalid;
         background-color: C.$c-invalid-bg;
         color: C.$c-brand-black;
@@ -612,7 +614,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 600px;
+    min-height: 800px;
     padding-top: 25px;
 
     .section__about {
@@ -649,7 +651,82 @@ main {
             border: 2px solid C.$c-brand-border;
             border-radius: 10px;
         }
+
+        .column {
+            float: left;
+            width: 50%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+    
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+            opacity: 0.9;
+            z-index: 2;
+        }
+    
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+    
+        p {
+            font-size: 16px;
+        }
+    
+        .container {
+            padding: 0 16px;
+        }
+    
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: C.$c-brand;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+    
+        .button:hover {
+            background-color: #555;
+        }
+    
+        @media screen and (max-width: 768px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+    
+        @media screen and (min-width: 768px) {
+            .column {
+                width: 50%;
+                display: block;
+            }
+        }
+    
+        @media screen and (min-width: 1024px) {
+            .column {
+                width: 33%;
+                display: block;
+            }
+        }
     }
+
+    
 }
 
 /* cart.html */
@@ -661,4 +738,74 @@ main {
     justify-content: center;
     min-height: 800px;
     padding-top: 25px;
+}
+
+.main__shops {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 800px;
+    padding-top: 25px;
+
+    #container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+
+        .section__shops {
+            margin: 10px;
+            padding: 0 25px;
+            opacity: .75;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid C.$c-brand-border;
+            border-radius: 5px;
+            max-width: 300px;
+            min-height: 300px;
+            background-color: C.$c-brand-bg;
+
+            .article__shops {
+                background-color: C.$c-brand-pink;
+                width: 300px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+
+                h5 {
+                    width: 30%;
+                    margin: 1rem;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    color: C.$c-brand-border;
+                    text-decoration: unset;
+                    text-align: center;
+                }
+
+                h6 {
+                    margin: 10px;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    color: C.$c-brand-black;
+                    text-decoration: overline;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: C.$c-brand-black;
+                }
+            }
+
+            
+        }
+    }
 }
