@@ -1,216 +1,186 @@
 <!DOCTYPE html>
 <html lang="es-AR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="../author.txt" />
-    <meta
-      name="description"
-      content="Proyecto Integrador - Etapa 1 | Bootcamp Full Stack Engineer para Educacion IT"
-    />
-    <meta
-      name="copyright"
-      content="Ref. to author | 2023 todos los derechos reservados"
-    />
-    <meta
-      name="keywords"
-      content="HTML5, CSS3, Imágenes, Git, GitHub, SCSS, Sass, NodeJs, Grid, JavaSCript"
-    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat:wght@500;700&display=swap"
-      rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="../author.txt" />
+  <meta name="description" content="Proyecto Integrador - Etapa 1 | Bootcamp Full Stack Engineer para Educacion IT" />
+  <meta name="copyright" content="Ref. to author | 2023 todos los derechos reservados" />
+  <meta name="keywords" content="HTML5, CSS3, Imágenes, Git, GitHub, SCSS, Sass, NodeJs, Grid, JavaSCript" />
 
-    <link rel="stylesheet" href="./css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat:wght@500;700&display=swap"
+    rel="stylesheet" />
 
-    <link
-      rel="icon"
-      href="./images/products/osita/mockup-graphics-PNsj6RiHAF4-unsplash.jpg"
-    />
+  <link rel="stylesheet" href="./css/main.css" />
 
-    <title>Home</title>
-  </head>
+  <link rel="icon" href="./images/products/osita/mockup-graphics-PNsj6RiHAF4-unsplash.jpg" />
 
-  <body>
-    <header class="header">
-      <picture class="header__logo">
-        <a href="index.html"
-          ><img
-            id="logo"
-            width="50px"
-            src="./images/products/osita/mockup-graphics-PNsj6RiHAF4-unsplash.jpg"
-            alt="imagen"
-        /></a>
-        <h2 class="brandTitle">Juguetería Cósmica</h2>
-      </picture>
-      <menu class="search">
-        <form action="" id="searchForm">
-          <input type="text" id="nameProd" placeholder="Buscar producto" />
-          <button type="submit"><i class="fas fa-search"></i></button>
-        </form>
-      </menu>
-      <menu class="cart">
-        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-      </menu>
-      <menu class="menu">
-        <a href="#" onclick="openMenu()"><i class="fas fa-bars"></i></a>
-      </menu>
-      <nav id="links" class="links header__links">
-        <a class="active" href="index.html">Home</a>
-        <a href="update.html">Alta</a>
-        <a href="contact.html">Contacto</a>
-        <a href="about.html">Nosotros</a>
-        <a href="shops.html">Shops</a>
-      </nav>
-    </header>
+  <title>Home</title>
+</head>
 
-    <main class="main__index">
-      <h1>Home</h1>
+<body>
+  <header class="header">
+    <picture class="header__logo">
+      <a href="index.html"><img id="logo" width="50px"
+          src="./images/products/osita/mockup-graphics-PNsj6RiHAF4-unsplash.jpg" alt="Osita Peluche" 
+          /></a>
+      <h2 class="brandTitle">Juguetería Cósmica</h2>
+    </picture>
+    <menu class="search">
+      <form action="" id="searchForm">
+        <input type="text" id="nameProd" placeholder="Buscar producto" />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </menu>
+    <menu class="cart">
+      <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+    </menu>
+    <menu class="menu">
+      <a href="#" onclick="openMenu()"><i class="fas fa-bars"></i></a>
+    </menu>
+    <nav id="links" class="links header__links">
+      <a class="active" href="index.html">Home</a>
+      <a href="update.html">Alta</a>
+      <a href="contact.html">Contacto</a>
+      <a href="about.html">Nosotros</a>
+      <a href="shops.html">Shops</a>
+    </nav>
+  </header>
 
+  <main class="main__index">
+    <h1>Nuestros Productos</h1>
+    <section id="category" class="category"><h4>Categorías</h4>
+      <article class="category__list"></article>
+      <article id="messageCategory"></article>
       <section class="section__products"></section>
+    </section>
 
-      <section class="cart">
-        <article class="cart__list"></article>
-      </section>
+    <aside class="cart">
+      <article id="messageCart"></article>
+      <article class="cart__list"></article>
+    </aside>
 
-      <aside class="slideshow-container">
-        <figure class="slides fade">
-          <img src="./images/slides/slide0_daniel-cheung.jpg" />
-        </figure>
-        <figure class="slides fade">
-          <img src="./images/slides/slide1_will-porada.jpg" />
-        </figure>
-        <div>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </aside>
+    <aside class="slideshow-container">
+      <figure class="slides fade">
+        <img src="./images/slides/slide0_daniel-cheung.jpg" />
+      </figure>
+      <figure class="slides fade">
+        <img src="./images/slides/slide1_will-porada.jpg" />
+      </figure>
+      <div>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </aside>
 
-      <aside class="slideshow-container">
-        <div class="container">
-          <a href="./contact.html">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="bannerSlides fadeBanner">
-                  <i class="fa-solid fa-truck-fast icon"></i>
-                  <div>
-                    <h4>Envío Gratis</h4>
-                    <h5>En órdenes superiores a $30000</h5>
-                  </div>
+    <aside class="slideshow-container">
+      <div class="container">
+        <a href="./contact.html">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="bannerSlides fadeBanner">
+                <i class="fa-solid fa-truck-fast icon"></i>
+                <div>
+                  <h4>Envío Gratis</h4>
+                  <h5>En órdenes superiores a $30000</h5>
                 </div>
-                <div class="bannerSlides fadeBanner">
-                  <i class="fa-regular fa-credit-card icon"></i>
-                  <div>
-                    <h4>Hasta 6 Cuotas sin Interés</h4>
-                    <h5>Con todas las tarjetas de crédito</h5>
-                  </div>
-                </div>
-                <div class="bannerSlides fadeBanner">
-                  <i class="fa-brands fa-whatsapp icon"></i>
-                  <div>
-                    <h4>Atención Al Cliente</h4>
-                    <h5>Estamos para ayudarte</h5>
-                  </div>
-                </div>
-                <p id="date"></p>
               </div>
+              <div class="bannerSlides fadeBanner">
+                <i class="fa-regular fa-credit-card icon"></i>
+                <div>
+                  <h4>Hasta 6 Cuotas sin Interés</h4>
+                  <h5>Con todas las tarjetas de crédito</h5>
+                </div>
+              </div>
+              <div class="bannerSlides fadeBanner">
+                <i class="fa-brands fa-whatsapp icon"></i>
+                <div>
+                  <h4>Atención Al Cliente</h4>
+                  <h5>Estamos para ayudarte</h5>
+                </div>
+              </div>
+              <p id="date"></p>
             </div>
-          </a>
+          </div>
+        </a>
+      </div>
+    </aside>
+    <aside>
+      <div class="elements-credit-cards">
+        <div class="icons-credit-cards">
+          <img class="img-credit-cards" src="" alt="visa" />
         </div>
-      </aside>
-      <aside>
-        <div class="elements-credit-cards">
-          <div class="icons-credit-cards">
-            <img class="img-credit-cards" src="" alt="visa" />
-          </div>
-          <div class="icons-credit-cards">
-            <img class="img-credit-cards" src="" alt="mastercard" />
-          </div>
-          <div class="icons-credit-cards">
-            <img class="img-credit-cards" src="" alt="amex" />
-          </div>
-          <div class="icons-credit-cards">
-            <img class="img-credit-cards" src="" alt="ar_banelco" />
-          </div>
-          <div class="icons-credit-cards">
-            <img class="img-credit-cards" src="" alt="ar_cabal" />
-          </div>
-          <div class="icons-credit-cards">
-            <img class="img-credit-cards" src="" alt="ar_tarjeta-naranja" />
-          </div>
-          <div class="icons-credit-cards">
-            <img class="img-credit-cards" src="" alt="ar_tarjeta-shopping" />
-          </div>
-          <div class="icons-credit-cards">
-            <img class="img-credit-cards" src="" alt="mercadopago" />
-          </div>
+        <div class="icons-credit-cards">
+          <img class="img-credit-cards" src="" alt="mastercard" />
         </div>
-      </aside>
-    </main>
-    <footer class="footer">
-      <picture class="footer__logo">
-        <a href="index.html"
-          ><img
-            id="logo"
-            width="50px"
-            src="./images/products/osita/mockup-graphics-PNsj6RiHAF4-unsplash.jpg"
-            alt="imagen"
-        /></a>
-      </picture>
-      <menu>
-        <nav class="footer__links">
-          <a href="contact.html">Contactanos!</a>
-        </nav>
-      </menu>
-      <menu class="footer__address">
-        <p>
-          <a href="">
-            <i class="fas fa-map-marker-alt"></i> Paraguay 4979, CABA
-          </a>
-        </p>
-        <p>
-          <a href=""> <i class="fas fa-phone-alt"></i> 011 1234-5678 </a>
-        </p>
-        <p>
-          <i class="fas fa-envelope"></i>
-          <a href="mailto:jugueteria@jugueteria_cosmica.com.ar" target="_blank">
-            jugueteria@cosmica.com.ar
-          </a>
-        </p>
-      </menu>
-      <nav class="footer__social">
-        <a
-          href="https://www.facebook.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-facebook-square"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-instagram-square"></i>
-        </a>
-        <a
-          href="https://www.twitter.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-twitter-square"></i>
-        </a>
+        <div class="icons-credit-cards">
+          <img class="img-credit-cards" src="" alt="amex" />
+        </div>
+        <div class="icons-credit-cards">
+          <img class="img-credit-cards" src="" alt="ar_banelco" />
+        </div>
+        <div class="icons-credit-cards">
+          <img class="img-credit-cards" src="" alt="ar_cabal" />
+        </div>
+        <div class="icons-credit-cards">
+          <img class="img-credit-cards" src="" alt="ar_tarjeta-naranja" />
+        </div>
+        <div class="icons-credit-cards">
+          <img class="img-credit-cards" src="" alt="ar_tarjeta-shopping" />
+        </div>
+        <div class="icons-credit-cards">
+          <img class="img-credit-cards" src="" alt="mercadopago" />
+        </div>
+      </div>
+    </aside>
+  </main>
+  <footer class="footer">
+    <picture class="footer__logo">
+      <a href="index.html"><img id="logo" width="50px"
+          src="./images/products/osita/mockup-graphics-PNsj6RiHAF4-unsplash.jpg" alt="imagen" /></a>
+    </picture>
+    <menu>
+      <nav class="footer__links">
+        <a href="contact.html">Contactanos!</a>
       </nav>
-    </footer>
+    </menu>
+    <menu class="footer__address">
+      <p>
+        <a href="">
+          <i class="fas fa-map-marker-alt"></i> Paraguay 4979, CABA
+        </a>
+      </p>
+      <p>
+        <a href=""> <i class="fas fa-phone-alt"></i> 011 1234-5678 </a>
+      </p>
+      <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:jugueteria@jugueteria_cosmica.com.ar" target="_blank">
+          jugueteria@cosmica.com.ar
+        </a>
+      </p>
+    </menu>
+    <nav class="footer__social">
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram-square"></i>
+      </a>
+      <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitter-square"></i>
+      </a>
+    </nav>
+  </footer>
 
-    <script src="../src/js/menu.js"></script>
-    <script src="../src/js/index.js"></script>
-    <script src="../src/js/banners.js"></script>
-    <script
-      src="https://kit.fontawesome.com/97c43de77d.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="../src/js/menu.js"></script>
+  <script src="../src/js/index.js"></script>
+  <script src="../src/js/banners.js"></script>
+  <script src="https://kit.fontawesome.com/97c43de77d.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
