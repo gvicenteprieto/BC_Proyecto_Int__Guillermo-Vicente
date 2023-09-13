@@ -1760,7 +1760,6 @@ main a:hover {
 }
 
 .footer {
-  margin: 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -1863,7 +1862,6 @@ main a:hover {
 
 @media (min-width: 768px) {
   .footer {
-    margin: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -1954,7 +1952,6 @@ main a:hover {
 }
 @media (max-width: 505px) {
   .footer {
-    margin: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -2040,7 +2037,6 @@ main a:hover {
 }
 @media (min-width: 1024px) {
   .footer {
-    margin: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -2129,7 +2125,6 @@ main a:hover {
 }
 @media (min-width: 1450px) {
   .footer {
-    margin: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

@@ -3,7 +3,7 @@
 @use "./_h-breakPoints" as BP;
 
 .footer {
-  margin: 1.5rem;
+  // margin: 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -120,7 +120,7 @@
 //$breakPoint--md: 768px;
 @media (min-width: BP.$breakPoint--md) {
   .footer {
-    margin: 1.5rem;
+    // margin: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -224,7 +224,7 @@
 //$breakPoint--xs: 490px;
 @media (max-width: BP.$breakPoint--xs) {
   .footer {
-    margin: 1.5rem;
+    // margin: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -322,7 +322,7 @@
 
 @media (min-width: BP.$breakPoint--xl) {
   .footer {
-    margin: 1.5rem;
+    // margin: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;  
@@ -423,7 +423,7 @@
 
 @media (min-width: BP.$maxWidth) {
   .footer {
-    margin: 1.5rem;
+    // margin: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
