@@ -207,20 +207,116 @@ let prd_9 = new Product(
   "./images/products/lego_3/mulyadi-j90sW7zZJQQ-unsplash.jpg"
 );
 
-// products.push(prd_1);
-// products.push(prd_2);
-// products.push(prd_3);
-// products.push(prd_4);
-// products.push(prd_5);
-// products.push(prd_6);
-// products.push(prd_7);
-// products.push(prd_8);
-// products.push(prd_9);
+let prd_10 = new Product(
+  "Auto 1",
+  1000,
+  10,
+  "Cosmic Toys",
+  "Auto",
+  "Auto",
+  "Auto",
+  "Si",
+  0,
+  99,
+  "./images/products/autos_1/gimmel-magaway-4E0u7VsfGms-unsplash.jpg"
+);
+
+let prd_11 = new Product(
+  "Auto 2",
+  1000,
+  10,
+  "Cosmic Toys",
+  "Auto",
+  "Auto",
+  "Auto",
+  "Si",
+  0,
+  99,
+  "./images/products/autos_2/giorgio-trovato-p0OlRAAYXLY-unsplash.jpg"
+);
+
+let prd_12 = new Product(
+  "Auto 3",
+  1000,
+  10,
+  "Cosmic Toys",
+  "Auto",
+  "Auto",
+  "Auto",
+  "Si",
+  0,
+  99,
+  "./images/products/autos_3/mink-mingle-Riz1qAplMQk-unsplash.jpg"
+);
+
+let prd_13 = new Product(
+  "Auto 4",
+  1000,
+  10,
+  "Cosmic Toys",
+  "Auto",
+  "Auto",
+  "Auto",
+  "Si",
+  0,
+  99,
+  "./images/products/autos_4/alex-zabavsky-WCQKaC2ffjs-unsplash.jpg"
+);
+
+let prd_14 = new Product(
+  "Auto 5",
+  1000,
+  10,
+  "Cosmic Toys",
+  "Auto",
+  "Auto",
+  "Auto",
+  "Si",
+  0,
+  99,
+  "./images/products/autos_5/giorgio-trovato-pGeDU93n0fQ-unsplash.jpg"
+);
+
+let prd_15 = new Product(
+  "Auto 6",
+  1000,
+  10,
+  "Cosmic Toys",
+  "Auto",
+  "Auto",
+  "Auto",
+  "Si",
+  0,
+  99,
+  "./images/products/autos_6/haidan-lB1akhaF8F4-unsplash.jpg"
+);
+
+
+
+
+
+
+products.push(prd_1);
+products.push(prd_2);
+products.push(prd_3);
+products.push(prd_4);
+products.push(prd_5);
+products.push(prd_6);
+products.push(prd_7);
+products.push(prd_8);
+products.push(prd_9);
+products.push(prd_10);
+products.push(prd_11);
+products.push(prd_12);
+products.push(prd_13);
+products.push(prd_14);
+products.push(prd_15);
+
 
 //recorriendo con un for:
-for (let i = 0; i < 9; i++) {
-  products.push(eval(`prd_${i + 1}`));
-}
+// for (let i = 0; i < 13; i++) {
+//   products.push(eval(`prd_${i + 1}`));
+// }
 
 // prd_1.getHtmlArticle();
 // prd_2.getHtmlArticle();
